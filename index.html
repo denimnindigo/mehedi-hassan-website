@@ -7,18 +7,128 @@
 <meta name="description" content="Md Mehedi Hassan — Textile Engineer, denim manufacturing professional and sustainability researcher.">
 <style>
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f6f2ea;color:#10253a;font-family:Arial,Helvetica,sans-serif}.home-reference{position:relative;width:100%;line-height:0;overflow:hidden;background:#061b2d}.home-reference img{display:block;width:100%;height:auto}.hotspot{position:absolute;display:block;z-index:20;background:rgba(255,255,255,.001);border:0;cursor:pointer;line-height:normal;pointer-events:auto;touch-action:manipulation;-webkit-tap-highlight-color:transparent}.hotspot:focus-visible{outline:2px solid #fff;outline-offset:3px}.nav-home{left:40.9%;top:4.0%;width:5.0%;height:5.0%}.nav-experience{left:48.6%;top:4.0%;width:8.0%;height:5.0%}.nav-research{left:59.6%;top:4.0%;width:7.5%;height:5.0%}.nav-cv{left:69.5%;top:4.0%;width:4%;height:5.0%}.nav-publication{left:75.0%;top:4.0%;width:10%;height:5.0%}.nav-contact{left:86.8%;top:4.0%;width:7%;height:5.0%}.cta-research{left:3.4%;top:65.1%;width:15.3%;height:5.8%}.cta-cv{left:19.3%;top:65.1%;width:13.0%;height:5.8%}.cta-orcid{left:33.4%;top:65.1%;width:13.2%;height:5.8%}.scroll-hotspot{left:47.0%;top:81.4%;width:6%;height:7%}.after-image{background:#f6f2ea;padding:90px 7vw 110px;line-height:1.6;text-align:center}.after-image .eyebrow{font-size:14px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:#1c6ba6}.after-image h2{font-family:Georgia,"Times New Roman",serif;font-weight:500;font-size:clamp(32px,4vw,54px);line-height:1.12;margin:18px auto 50px;max-width:900px}.quick-grid{max-width:1100px;margin:auto;display:grid;grid-template-columns:repeat(4,1fr);gap:16px;text-align:left}.quick-grid a{display:block;padding:25px;background:#fff;border:1px solid #d9ddde;color:#10253a;text-decoration:none;transition:.25s}.quick-grid a:hover{transform:translateY(-3px);border-color:#6aa6cf}.quick-grid strong{display:block;font-size:14px;margin-bottom:6px}.quick-grid span{font-size:13px;color:#65727c}footer{background:#041727;color:#b9c9d2;padding:30px 7vw;font-size:12px;text-align:center}@media(max-width:700px){
-body{overflow-x:hidden}
+:root{--navy:#061a2b;--navy2:#0b2942;--ink:#10253a;--blue:#2f79ad;--muted:#71808a;--paper:#f6f2ea}
+body{overflow-x:hidden;background:var(--paper)}
 .home-reference{display:none}
-.mobile-home{display:block;background:#061b2d;color:#fff}
-.mobile-nav{padding:14px 18px 12px;border-bottom:1px solid rgba(255,255,255,.14);display:flex;align-items:center;justify-content:space-between;gap:12px;background:#061b2d}
-.mobile-brand{display:flex;align-items:center;gap:10px;min-width:0}
-.mobile-logo{width:42px;height:42px;border:1px solid rgba(255,255,255,.35);object-fit:cover;flex:0 0 auto}
-.mobile-brand strong{display:block;font-size:12px;letter-spacing:.13em;white-space:nowrap}.mobile-brand span{display:block;font-size:8px;letter-spacing:.12em;color:#a9c1cf;margin-top:3px;white-space:nowrap}
-.mobile-menu{display:flex;gap:10px;align-items:center}.mobile-menu a{font-size:9px;letter-spacing:.08em;color:#e8f0f4;padding:7px 3px;white-space:nowrap}
-.mobile-hero{padding:56px 24px 50px;position:relative;overflow:hidden;background:radial-gradient(circle at 90% 25%,rgba(37,111,164,.35),transparent 34%),linear-gradient(135deg,#092d49,#061b2d 70%)}
-.mobile-hero:after{content:"";position:absolute;inset:0;opacity:.14;pointer-events:none;background:repeating-linear-gradient(125deg,rgba(255,255,255,.12) 0 1px,transparent 1px 7px)}
-.mobile-hero>*{position:relative;z-index:1}.mobile-eyebrow{font-size:11px;letter-spacing:.17em;text-transform:uppercase;color:#8fb8d1;font-weight:700}.mobile-hero h1{font-family:Georgia,"Times New Roman",serif;font-weight:500;font-size:46px;line-height:1.02;letter-spacing:-.04em;margin:14px 0 22px}.mobile-rule{width:44px;border-top:2px solid #5aa1d5;margin-bottom:25px}.mobile-hero p{font-size:16px;line-height:1.65;color:#dce8ee;margin:0 0 18px}.mobile-hero p strong{color:#fff}.mobile-actions{display:grid;grid-template-columns:1fr;gap:10px;margin-top:28px}.mobile-actions a{display:block;text-align:center;padding:13px 12px;border:1px solid rgba(255,255,255,.5);border-radius:4px;color:#fff;font-size:13px;font-weight:700;background:rgba(255,255,255,.03);touch-action:manipulation}.mobile-actions a.primary{background:#1f79bd;border-color:#1f79bd}.mobile-weave{margin:38px auto 0;max-width:330px;padding:26px 18px;border-top:1px solid rgba(255,255,255,.28);border-bottom:1px solid rgba(255,255,255,.18);text-align:center}.mobile-weave .bars{height:74px;margin:0 auto 20px;width:180px;background:repeating-linear-gradient(90deg,transparent 0 12px,rgba(128,180,218,.65) 12px 14px),repeating-linear-gradient(0deg,transparent 0 12px,rgba(92,144,183,.55) 12px 14px);opacity:.7}.mobile-weave p{font-family:Georgia,"Times New Roman",serif;font-size:15px;line-height:1.55;color:#b9ccd7;margin:0}.mobile-scrollcue{text-align:center;margin-top:30px;color:#b8cbd6;font-size:11px;letter-spacing:.12em;text-transform:uppercase}
-.after-image{padding:60px 24px 80px}.after-image h2{font-size:34px}.quick-grid{grid-template-columns:1fr;gap:12px}.quick-grid a{padding:20px}
+.mobile-home{display:block;background:var(--navy);color:#fff}
+
+.mobile-nav{
+  min-height:68px;padding:10px 18px;
+  border-bottom:1px solid rgba(255,255,255,.10);
+  display:flex;align-items:center;justify-content:space-between;gap:14px;
+  background:rgba(4,19,32,.97);
+  position:relative;z-index:5
+}
+.mobile-brand{display:flex;align-items:center;gap:10px;min-width:0;color:#fff;text-decoration:none}
+.mobile-logo{width:40px;height:40px;border:1px solid rgba(255,255,255,.28);object-fit:cover;flex:0 0 auto}
+.mobile-brand strong{display:block;font-size:11px;letter-spacing:.15em;white-space:nowrap;font-weight:700}
+.mobile-brand span span{display:block;font-size:7.5px;letter-spacing:.10em;color:#9eb4c1;margin-top:4px;white-space:nowrap}
+.mobile-menu{display:flex;gap:9px;align-items:center}
+.mobile-menu a{font-size:8px;letter-spacing:.09em;color:#dce7ec;padding:8px 2px;white-space:nowrap;text-decoration:none}
+.mobile-menu a:last-child{border-left:1px solid rgba(255,255,255,.18);padding-left:10px}
+
+.mobile-hero{
+  padding:44px 22px 0;position:relative;overflow:hidden;
+  background:
+    radial-gradient(circle at 100% 7%,rgba(57,125,175,.30),transparent 29%),
+    radial-gradient(circle at 0% 70%,rgba(24,74,109,.25),transparent 35%),
+    linear-gradient(145deg,#0b2b45 0%,#061a2b 72%)
+}
+.mobile-hero:after{
+  content:"";position:absolute;inset:0;opacity:.075;pointer-events:none;
+  background:repeating-linear-gradient(125deg,rgba(255,255,255,.22) 0 1px,transparent 1px 8px)
+}
+.mobile-hero>*{position:relative;z-index:1}
+
+.mobile-eyebrow{
+  font-size:9px;letter-spacing:.18em;text-transform:uppercase;
+  color:#86b4d0;font-weight:700;margin-bottom:15px
+}
+.mobile-hero h1{
+  font-family:Georgia,"Times New Roman",serif;font-weight:500;
+  font-size:42px;line-height:1.04;letter-spacing:-.035em;margin:0 0 20px
+}
+.mobile-rule{width:42px;border-top:2px solid #4e96c9;margin-bottom:22px}
+.mobile-hero p{font-size:15px;line-height:1.68;color:#d5e1e7;margin:0 0 14px;max-width:520px}
+.mobile-hero p strong{color:#fff;font-weight:700}
+
+.mobile-portrait{
+  margin:30px -22px 0;height:290px;position:relative;overflow:hidden;
+  background:linear-gradient(to bottom,rgba(6,26,43,0),rgba(6,26,43,.10))
+}
+.mobile-portrait:after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(to bottom,transparent 48%,#061a2b 100%)
+}
+.mobile-portrait img{
+  display:block;width:100%;height:100%;object-fit:cover;object-position:50% 27%;
+  filter:saturate(.92) contrast(1.02)
+}
+
+.mobile-actions{
+  display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:25px 0 0
+}
+.mobile-actions a{
+  display:flex;align-items:center;justify-content:center;min-height:46px;
+  text-align:center;padding:12px 10px;border:1px solid rgba(255,255,255,.28);
+  border-radius:3px;color:#fff;text-decoration:none;font-size:11px;
+  letter-spacing:.04em;font-weight:700;background:rgba(255,255,255,.025);
+  touch-action:manipulation
+}
+.mobile-actions a.primary{background:#2878b0;border-color:#2878b0;grid-column:1/-1}
+.mobile-actions a:hover{background:rgba(255,255,255,.08)}
+.mobile-actions a.primary:hover{background:#2878b0}
+
+.mobile-weave{
+  margin:34px 0 0;padding:25px 0 27px;
+  border-top:1px solid rgba(255,255,255,.16);
+  border-bottom:1px solid rgba(255,255,255,.14);text-align:left
+}
+.mobile-weave .weave-label{
+  font-size:8px;letter-spacing:.18em;text-transform:uppercase;color:#6fa3c4;
+  margin-bottom:14px;font-weight:700
+}
+.mobile-weave .bars{
+  height:58px;width:100%;max-width:280px;margin:0 0 18px;
+  background:
+    repeating-linear-gradient(90deg,transparent 0 12px,rgba(123,177,213,.45) 12px 13px),
+    repeating-linear-gradient(0deg,transparent 0 12px,rgba(81,139,180,.36) 12px 13px);
+  opacity:.8
+}
+.mobile-weave p{
+  font-family:Georgia,"Times New Roman",serif;font-size:15px;line-height:1.55;
+  color:#b9ccd7;margin:0;max-width:330px
+}
+.mobile-scrollcue{
+  text-align:left;margin:0;padding:19px 0 24px;color:#91acbb;
+  font-size:8px;letter-spacing:.17em;text-transform:uppercase
+}
+
+.after-image{padding:58px 22px 74px}
+.after-image .eyebrow{font-size:9px;letter-spacing:.18em}
+.after-image h2{font-size:35px;line-height:1.08;margin:14px auto 34px}
+.quick-grid{grid-template-columns:1fr 1fr;gap:10px}
+.quick-grid a{
+  padding:18px 15px;background:#fff;border:1px solid #dfe2e1;
+  min-height:100px;text-decoration:none
+}
+.quick-grid strong{font-size:10px;letter-spacing:.08em;margin-bottom:8px}
+.quick-grid span{font-size:11px;line-height:1.45;color:#65727c}
+#contact.after-image{padding-top:8px}
+#contact.after-image h2{font-size:30px}
+#contact.after-image p{font-size:12px;line-height:1.7;color:#65727c}
+footer{padding:25px 22px;font-size:10px;line-height:1.6}
+
+@media(max-width:390px){
+  .mobile-brand strong{font-size:10px}
+  .mobile-brand span span{font-size:6.8px}
+  .mobile-menu{gap:6px}
+  .mobile-menu a{font-size:7.2px}
+  .mobile-hero h1{font-size:38px}
+  .mobile-actions{grid-template-columns:1fr}
+  .mobile-actions a.primary{grid-column:auto}
+  .mobile-portrait{height:270px}
+}
 }
 @media(min-width:701px){body{overflow-x:hidden}.mobile-home{display:none}}
 @media(min-width:701px){.mobile-home{display:none}}
@@ -46,17 +156,41 @@ body{overflow-x:hidden}
 </div>
 <section class="mobile-home" aria-label="Mobile homepage">
   <nav class="mobile-nav">
-    <a class="mobile-brand" href="index.html"><img class="mobile-logo" src="favicon-48.png" alt="MH"><span><strong>MD MEHEDI HASSAN</strong><span>TEXTILE ENGINEER · DENIM · SUSTAINABILITY</span></span></a>
-    <div class="mobile-menu"><a href="experience.html">EXPERIENCE</a><a href="research.html">RESEARCH</a><a href="cv.html">CV</a></div>
+    <a class="mobile-brand" href="index.html">
+      <img class="mobile-logo" src="favicon-48.png" alt="MH">
+      <span><strong>MD MEHEDI HASSAN</strong><span>TEXTILE ENGINEER · DENIM · SUSTAINABILITY</span></span>
+    </a>
+    <div class="mobile-menu">
+      <a href="experience.html">EXPERIENCE</a>
+      <a href="research.html">RESEARCH</a>
+      <a href="cv.html">CV</a>
+    </div>
   </nav>
+
   <div class="mobile-hero">
     <div class="mobile-eyebrow">Textile Engineer · Denim · Sustainability Research</div>
     <h1>Hello, I’m<br>Md Mehedi Hassan</h1>
     <div class="mobile-rule"></div>
+
     <p>I am a <strong>textile engineer and denim professional</strong> with industry experience in fabric development, finishing and process optimization.</p>
     <p>My research explores how <strong>technology adoption and resource efficiency</strong> can make textile manufacturing more sustainable.</p>
-    <div class="mobile-actions"><a class="primary" href="research.html">Explore Research</a><a href="cv.html">Download CV</a><a href="https://orcid.org/0009-0005-5364-8729" target="_blank" rel="noopener">ORCID Profile</a></div>
-    <div class="mobile-weave"><div class="bars" aria-hidden="true"></div><p>“The strength of every fabric comes from the way its threads work together.”</p></div>
+
+    <div class="mobile-actions">
+      <a class="primary" href="research.html">Explore Research</a>
+      <a href="cv.html">View CV</a>
+      <a href="https://orcid.org/0009-0005-5364-8729" target="_blank" rel="noopener">ORCID</a>
+    </div>
+
+    <div class="mobile-portrait" aria-label="Portrait of Md Mehedi Hassan">
+      <img src="profile.jpg" alt="Md Mehedi Hassan">
+    </div>
+
+    <div class="mobile-weave">
+      <div class="weave-label">Industry practice → research impact</div>
+      <div class="bars" aria-hidden="true"></div>
+      <p>“The strength of every fabric comes from the way its threads work together.”</p>
+    </div>
+
     <div class="mobile-scrollcue">↓ Continue exploring</div>
   </div>
 </section>
